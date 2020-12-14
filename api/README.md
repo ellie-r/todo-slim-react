@@ -8,6 +8,7 @@
 ### Routes
 
 **/**
+
 GET
 - Gets all non complete tasks from the database
 - Returns:
@@ -17,6 +18,7 @@ Success response - returns json with an array of objects in data parameter
     - Code: 500 Content: **{"success": false, "message": "SQL error message", "data": []}**
     
 **/markAsComplete/{id}**
+
 PUT
 - Marks task as completed
 - Required: { id }
@@ -28,6 +30,7 @@ PUT
         - Code: 400 Content: **{"success": false, "message": "Could not mark as complete", "data": []}**
 
 **/addNewTask**
+
 POST
 - Creates new task
 - Request data **{ taskName : 'task' }**
